@@ -33,3 +33,31 @@ for line in content:
     m = line.split()
     print(m)
     three.append(m[2])
+
+
+
+Q5.Challenge: Create a list called emotions that contains the first word of every line in emotion_words.txt.
+fileref = open("emotion_words.txt","r")
+content = fileref.readlines()
+emotions = []
+for line in content:
+    m = line.split()
+    print(m)
+    emotions.append(m[0])
+
+
+Q6.Assign the first 33 characters from the textfile, travel_plans.txt to the variable first_chars.
+fileref = open("travel_plans.txt","r")
+first_chars = fileref.read()[:33]
+
+
+Q7.Challenge: Using the file school_prompt.txt, if the character ‘p’ is in a word, then add the word to a list called p_words.
+fileref =open("school_prompt.txt","r")
+content = fileref.read().split()
+p_words = []
+for word in content:
+    for ch in word:
+        if ch =="p":
+            p_words.append(word)
+            break
+
